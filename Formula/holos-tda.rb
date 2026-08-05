@@ -1,25 +1,25 @@
 class HolosTda < Formula
   desc "Vietoris-Rips persistent homology with an implicit ripser-class engine"
   homepage "https://github.com/t0rsion/holos"
-  version "0.3.0"
+  version "0.3.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/t0rsion/holos/releases/download/v0.3.0/holos-tda-aarch64-apple-darwin.tar.xz"
-      sha256 "ffddb22ba4d6ce9d22a99c7988d6f22d4472117ed44c861263c618beb7d5de77"
+      url "https://github.com/t0rsion/holos/releases/download/v0.3.1/holos-tda-aarch64-apple-darwin.tar.xz"
+      sha256 "d3b550f93ade2e8cb808c9fbe691e78d81c7e824d102f65b10d7a182bf0532b5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/t0rsion/holos/releases/download/v0.3.0/holos-tda-x86_64-apple-darwin.tar.xz"
-      sha256 "e6037f5eea3330282921116bc679f08a489bd6a3a5b79296116abc21dc80f219"
+      url "https://github.com/t0rsion/holos/releases/download/v0.3.1/holos-tda-x86_64-apple-darwin.tar.xz"
+      sha256 "b8911bc1d74500dece598fd05fbc829fb01d8bdd9f5fe1345383246cfe366f84"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/t0rsion/holos/releases/download/v0.3.0/holos-tda-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "61940eaccae6afcfd308071b396c30bfcff34a8aa33990211541f634efcee3f5"
+      url "https://github.com/t0rsion/holos/releases/download/v0.3.1/holos-tda-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f4d8e34632cffa2ee018e4eb1801fe97816ca43b4ec316d7d486be71ff766712"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/t0rsion/holos/releases/download/v0.3.0/holos-tda-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "bf5254d0adb8c3df4f89b9dedffbcabdc38b1139e2b082f6ea85676a3eccc365"
+      url "https://github.com/t0rsion/holos/releases/download/v0.3.1/holos-tda-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "8688792d28574562108cadccfbe1db42ce2b30583b76cfac7471c12dd5982b52"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
