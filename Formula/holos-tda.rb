@@ -1,25 +1,25 @@
 class HolosTda < Formula
   desc "Vietoris-Rips persistent homology with an implicit ripser-class engine"
   homepage "https://github.com/t0rsion/holos"
-  version "0.3.1"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/t0rsion/holos/releases/download/v0.3.1/holos-tda-aarch64-apple-darwin.tar.xz"
-      sha256 "d3b550f93ade2e8cb808c9fbe691e78d81c7e824d102f65b10d7a182bf0532b5"
+      url "https://github.com/t0rsion/holos/releases/download/v0.4.0/holos-tda-aarch64-apple-darwin.tar.xz"
+      sha256 "35da6e2d2c972818fe8271d756348bf722d52cb1bba6447dd5c013a38d8a8d43"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/t0rsion/holos/releases/download/v0.3.1/holos-tda-x86_64-apple-darwin.tar.xz"
-      sha256 "b8911bc1d74500dece598fd05fbc829fb01d8bdd9f5fe1345383246cfe366f84"
+      url "https://github.com/t0rsion/holos/releases/download/v0.4.0/holos-tda-x86_64-apple-darwin.tar.xz"
+      sha256 "413fc042a2cedee076787acdcfd658161b2350d9c7949aa781637135322a7715"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/t0rsion/holos/releases/download/v0.3.1/holos-tda-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f4d8e34632cffa2ee018e4eb1801fe97816ca43b4ec316d7d486be71ff766712"
+      url "https://github.com/t0rsion/holos/releases/download/v0.4.0/holos-tda-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "0e6885ac5e43349cffa03ad1a0bec54a0685d852bc4bca82bd1f148b9f94c290"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/t0rsion/holos/releases/download/v0.3.1/holos-tda-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "8688792d28574562108cadccfbe1db42ce2b30583b76cfac7471c12dd5982b52"
+      url "https://github.com/t0rsion/holos/releases/download/v0.4.0/holos-tda-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "51ceee3655312adbce1a9978e7b413829c9ef2556ae2a639efdb037dc3007229"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
@@ -48,10 +48,18 @@ class HolosTda < Formula
   end
 
   def install
-    bin.install "holos" if OS.mac? && Hardware::CPU.arm?
-    bin.install "holos" if OS.mac? && Hardware::CPU.intel?
-    bin.install "holos" if OS.linux? && Hardware::CPU.arm?
-    bin.install "holos" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "holos"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "holos"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "holos"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "holos"
+    end
 
     install_binary_aliases!
 
