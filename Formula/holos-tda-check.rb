@@ -1,25 +1,25 @@
 class HolosTdaCheck < Formula
-  desc "Independent checker for proof-carrying holos persistence"
+  desc "Independent checker for Holos proof and coordinate artifacts"
   homepage "https://github.com/t0rsion/holos"
-  version "0.7.0"
+  version "0.8.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/t0rsion/holos/releases/download/v0.7.0/holos-tda-check-aarch64-apple-darwin.tar.xz"
-      sha256 "0017081e6799dfffd82d8a841370e020ecc2a6cff4df5a7d6068630c8e90bcb2"
+      url "https://github.com/t0rsion/holos/releases/download/v0.8.0/holos-tda-check-aarch64-apple-darwin.tar.xz"
+      sha256 "946126cc7ff21cd152474bf5bd2a952405637c6c8cba358af5939719d055a6f9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/t0rsion/holos/releases/download/v0.7.0/holos-tda-check-x86_64-apple-darwin.tar.xz"
-      sha256 "37b8f6492f644329a587202a567c2d69e901b83b2ceb5134bf9036643daca149"
+      url "https://github.com/t0rsion/holos/releases/download/v0.8.0/holos-tda-check-x86_64-apple-darwin.tar.xz"
+      sha256 "133da96d8f80db7f6663cab95b822ab681f14395559222813f6901a4715f707c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/t0rsion/holos/releases/download/v0.7.0/holos-tda-check-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "9fe3cce889b93fa7f90de2f3a423156805b9bf58cf8dd252a7c85440e0a0b665"
+      url "https://github.com/t0rsion/holos/releases/download/v0.8.0/holos-tda-check-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "9fbe10fdf628f07cc4dce3bc15662fa146e3531fdecace0b1020fe8e2b2d47fd"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/t0rsion/holos/releases/download/v0.7.0/holos-tda-check-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "b8d3dbd5553fdb2b59e833a5121a694d7130850e17ce317352217b12267dba17"
+      url "https://github.com/t0rsion/holos/releases/download/v0.8.0/holos-tda-check-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "cdcc3a2de122b8a8767b2e269e5b6dcdfb62116eeb2d75d33503a7c5fc17b075"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
