@@ -1,25 +1,25 @@
 class HolosTdaCheck < Formula
   desc "Independent checker for Holos proof and coordinate artifacts"
   homepage "https://github.com/t0rsion/holos"
-  version "0.8.0"
+  version "0.9.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/t0rsion/holos/releases/download/v0.8.0/holos-tda-check-aarch64-apple-darwin.tar.xz"
-      sha256 "946126cc7ff21cd152474bf5bd2a952405637c6c8cba358af5939719d055a6f9"
+      url "https://github.com/t0rsion/holos/releases/download/v0.9.0/holos-tda-check-aarch64-apple-darwin.tar.xz"
+      sha256 "3ae202d50a5a5eb24f01c2e8b93d89b6fe89c401323b9d5d113f31b62a6d0849"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/t0rsion/holos/releases/download/v0.8.0/holos-tda-check-x86_64-apple-darwin.tar.xz"
-      sha256 "133da96d8f80db7f6663cab95b822ab681f14395559222813f6901a4715f707c"
+      url "https://github.com/t0rsion/holos/releases/download/v0.9.0/holos-tda-check-x86_64-apple-darwin.tar.xz"
+      sha256 "9beb658567de0c27ef5ebb543dd7e16584171bcc1d7b7ea1b81f9ed550490953"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/t0rsion/holos/releases/download/v0.8.0/holos-tda-check-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "9fbe10fdf628f07cc4dce3bc15662fa146e3531fdecace0b1020fe8e2b2d47fd"
+      url "https://github.com/t0rsion/holos/releases/download/v0.9.0/holos-tda-check-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "e18598d47cedd1386822b0824a1f1dec282b15560e0a26ac56b754c00b43fe7d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/t0rsion/holos/releases/download/v0.8.0/holos-tda-check-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "cdcc3a2de122b8a8767b2e269e5b6dcdfb62116eeb2d75d33503a7c5fc17b075"
+      url "https://github.com/t0rsion/holos/releases/download/v0.9.0/holos-tda-check-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "0f945eef88cc3a226068be8b98b60b0bc07208ebefc6cfc69fc23569569daf9b"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
